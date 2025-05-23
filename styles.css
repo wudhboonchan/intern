@@ -1,0 +1,161 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+}
+.page-container {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 30px;
+}
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 80px;
+}
+nav .nav-left{
+  color: var(--text-color);
+  background-image: url('HFU.png');
+  width: 30%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+nav .nav-right a {
+  color: var(--text-color);
+  padding: 5px 15px;
+  margin-right: 10px
+}
+nav .nav-right .active {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border-radius: 5px;
+}
+nav .nav-right .active:hover {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+nav .nav-right a:hover {
+  border: 2px dotted var(--text-color);
+  border-radius: 5px;
+}
+
+/* HERO */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+}
+.hero-section .text {
+  flex: 3;
+}
+.hero-section .text h1 {
+  font-size: 45px;
+}
+.hero-section .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+.hero-section .headshot img {
+  width: 450px;
+  border-radius: 50%;
+  border: 1px dashed;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #c2c2c2;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+}
+
+
+
+
+/* Professors */
+.prof-section{
+  display: grid;
+  grid-column: auto;
+}
+
+.prof-section h1 {
+  font-size: 45px;
+  padding: 0 50px;
+  margin: 90px 0;
+  margin-bottom: 50px;
+  gap: 40px;
+}
+
+.prof-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.prof-table th {
+  background-color: #007A3D;
+  color: #eeeff1;
+  padding: 10px;
+}
+
+.prof-table td, th {
+  border: 1px solid black;
+}
+
+.prof-table td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.prof-table td ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.prof-table td:nth-child(1), .prof-table th:nth-child(1) {
+  width: 18%; /* Professors */
+}
+.prof-table td:nth-child(2), .prof-table th:nth-child(2) {
+  width: 15%; /* Email */
+}
+.prof-table td:nth-child(3), .prof-table th:nth-child(3) {
+  width: 7%; /* Office */
+}
+.prof-table td:nth-child(4), .prof-table th:nth-child(4) {
+  width: 28%; /* Teaching areas */
+}
+.prof-table td:nth-child(5), .prof-table th:nth-child(5) {
+  width: 32%; /* Work and research */
+}
