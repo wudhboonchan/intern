@@ -196,6 +196,13 @@ select {
     height: auto;
   }
 
+  .nav-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
   .nav-left {
   display: block; /* ✅ ensure it's block-level */
   min-height: 60px; /* ✅ guarantees the height exists */
@@ -203,7 +210,7 @@ select {
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
-}
+  }
 
   .menu-toggle {
     display: block;
@@ -219,6 +226,8 @@ select {
     display: none;
     flex-direction: column;
     width: 100%;
+    max-width: 750px;
+    box-sizing: border-box;
   }
 
   .nav-right.show {
@@ -229,6 +238,8 @@ select {
     margin: 5px 0;
     padding: 10px;
     width: 100%;
+    max-width: 750px;
+    box-sizing: border-box;
   }
 
   .hero-section {
@@ -245,5 +256,18 @@ select {
 
   h1 {
     font-size: 24px;
+  }
+
+  .page-container {
+    max-width: 760px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .container {
+    max-width: 760px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: -35px;
   }
 }
