@@ -4,6 +4,7 @@
   --background-color: #eeeff1;
   --hfu-green: #007A3D;
   --red-text: #dd0202;
+  --grey-text: #c7c7c7;
 }
 body {
   display: flex;
@@ -206,4 +207,8 @@ ol>li {
 .text-highlight{
   color: var(--hfu-green);
   text-decoration:underline;
+}
+.text-crossing{
+  text-decoration: line-through;
+  color: var(--grey-text);
 }
