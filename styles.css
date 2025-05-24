@@ -111,6 +111,14 @@ nav .nav-right a:hover {
 ol>li {
   margin-top: 10px;
 }
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto -50px auto;
+  max-width: 1400px;
+  width: 100%;
+  padding-left: 50px;
+}
 
 
 
