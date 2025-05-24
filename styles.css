@@ -2,6 +2,7 @@
   --text-color: #1a1c20;
   --link-color: #4a76ee;
   --background-color: #eeeff1;
+  --hfu-green: #007A3D;
 }
 body {
   display: flex;
@@ -23,6 +24,13 @@ a {
   text-decoration: none;
   color: var(--link-color);
 }
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+
 
 /* NAVBAR */
 nav {
@@ -63,35 +71,6 @@ nav .nav-right a:hover {
   border-radius: 5px;
 }
 
-/* HERO */
-.hero-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-  margin: 50px 0;
-}
-.hero-section .text {
-  flex: 3;
-}
-.hero-section .text h1 {
-  font-size: 45px;
-}
-.hero-section .headshot {
-  flex: 2;
-  display: flex;
-  justify-content: right;
-}
-.hero-section .headshot img {
-  width: 450px;
-  border-radius: 50%;
-  border: 1px dashed;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
 /* FOOTER */
 .footer {
   background-color: #c2c2c2;
@@ -105,16 +84,38 @@ nav .nav-right a:hover {
 
 
 
-/* Professors */
-.prof-section{
+
+
+/* HERO INDEX */
+.hero-section {
   display: grid;
-  grid-column: auto;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
 }
 
-.prof-section h1 {
-  font-size: 45px;
+.hero-section .headshot img {
+  width: 450px;
+  border: 1px dashed;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 180px;
+}
+
+
+
+
+
+/* PROFESSOR */
+.prof-section,
+.document-section{
+  display: grid;
+  grid-column: auto;
   padding: 0 50px;
-  margin: 90px 0;
   margin-bottom: 50px;
   gap: 40px;
 }
@@ -125,7 +126,7 @@ nav .nav-right a:hover {
 }
 
 .prof-table th {
-  background-color: #007A3D;
+  background-color: var(--hfu-green);
   color: #eeeff1;
   padding: 10px;
 }
@@ -158,4 +159,13 @@ nav .nav-right a:hover {
 }
 .prof-table td:nth-child(5), .prof-table th:nth-child(5) {
   width: 32%; /* Work and research */
+}
+
+
+
+
+
+/* DOCUMENTS */
+.topic-header {
+  
 }
