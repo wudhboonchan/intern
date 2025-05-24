@@ -15,7 +15,10 @@
   <div class="page-container">
     <nav>
       <div class="nav-left"></div>
-      <div class="nav-right">
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-right" id="navMenu">
         <a href="#" class="active"><i class="fa-solid fa-house-chimney-window"></i> Home</a>
         <a href="documents.html"><i class="fa-solid fa-file"></i> Documents</a>
         <a href="writing_guideline.html"><i class="fa-solid fa-spa"></i> Writing guideline</a>
@@ -61,5 +64,15 @@
 			<center> 2025 © Wudh Boonchan</center>
 		</section>
 	</footer>
+
+  <script>
+  const toggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+  </script>
+  
 </body>
 </html>

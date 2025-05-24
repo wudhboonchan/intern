@@ -54,6 +54,7 @@ nav .nav-left{
   font-weight: 400;
   margin-top: 20px;
 }
+
 nav .nav-right a {
   color: var(--text-color);
   padding: 5px 15px;
@@ -178,4 +179,71 @@ select {
 .text-crossing{
   text-decoration: line-through;
   color: var(--grey-text);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+  }
+
+  .nav-left {
+  display: block; /* ✅ ensure it's block-level */
+  min-height: 60px; /* ✅ guarantees the height exists */
+  background-image: url('HFU.png');
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 10px;
+    align-self: flex-end;
+    margin-right: 10px;
+  }
+
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-right.show {
+    display: flex;
+  }
+
+  .nav-right a {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-section .headshot img {
+    margin-left: 0;
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
 }
