@@ -3,6 +3,7 @@
   --link-color: #4a76ee;
   --background-color: #eeeff1;
   --hfu-green: #007A3D;
+  --red-text: #dd0202;
 }
 body {
   display: flex;
@@ -104,8 +105,12 @@ nav .nav-right a:hover {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   margin-left: 180px;
+  flex:1
 }
 
+ol>li {
+  margin-top: 10px;
+}
 
 
 
@@ -166,3 +171,22 @@ nav .nav-right a:hover {
 
 
 /* DOCUMENTS */
+.box-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+}
+
+.box-container-right h3{
+  margin-top: 0;
+}
+
+.red-text {
+  color: var(--red-text);
+  text-decoration: underline;
+}
+
+.text-highlight{
+  color: var(--hfu-green);
+  text-decoration:underline;
+}
