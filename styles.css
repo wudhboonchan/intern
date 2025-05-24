@@ -189,9 +189,18 @@ ol>li {
   margin-top: 0;
 }
 
+.box-container-left {
+  border-right: 3px dashed black;
+  margin-right: 20px;
+}
+
 .red-text {
   color: var(--red-text);
   text-decoration: underline;
+}
+.red-warning{
+  color: var(--red-text);
+  font-size: 18px;
 }
 
 .text-highlight{
