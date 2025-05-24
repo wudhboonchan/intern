@@ -134,45 +134,12 @@ ol>li {
   gap: 40px;
 }
 
-.prof-table table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.prof-table th {
-  background-color: var(--hfu-green);
-  color: #eeeff1;
-  padding: 10px;
-}
-
-.prof-table td, th {
-  border: 1px solid black;
-}
-
-.prof-table td {
-  padding: 10px;
-  vertical-align: top;
-}
-
-.prof-table td ul {
-  padding-left: 20px;
-  margin: 0;
-}
-
-.prof-table td:nth-child(1), .prof-table th:nth-child(1) {
-  width: 18%; /* Professors */
-}
-.prof-table td:nth-child(2), .prof-table th:nth-child(2) {
-  width: 15%; /* Email */
-}
-.prof-table td:nth-child(3), .prof-table th:nth-child(3) {
-  width: 7%; /* Office */
-}
-.prof-table td:nth-child(4), .prof-table th:nth-child(4) {
-  width: 28%; /* Teaching areas */
-}
-.prof-table td:nth-child(5), .prof-table th:nth-child(5) {
-  width: 32%; /* Work and research */
+select {
+  height: 30px;         /* Increased height */
+  font-size: 18px;      /* Larger text */
+  padding: 5px 10px;    /* Extra space inside */
+  border-radius: 5px;   /* Optional: rounded corners */
+  border: 1px solid #ccc;
 }
 
 
