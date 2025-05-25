@@ -19,10 +19,8 @@ body {
 .page-container {
   flex: 1;
   max-width: 1400px;
-  box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  padding-bottom: 30px;
 }
 a {
   text-decoration: none;
@@ -34,7 +32,10 @@ h1 {
 h2 {
   font-size: 36px;
 }
-
+ol>li,
+ul>li {
+  margin-top: 10px;
+}
 
 /* NAVBAR */
 nav {
@@ -114,9 +115,7 @@ nav .nav-right a:hover {
   flex:1;
 }
 
-ol>li {
-  margin-top: 10px;
-}
+
 .container{
   display: grid;
   grid-template-columns: 1fr;
@@ -131,7 +130,8 @@ ol>li {
 
 /* PROFESSOR */
 .prof-section,
-.document-section{
+.document-section,
+.guide-section{
   display: grid;
   grid-column: auto;
   padding: 0 50px;
@@ -170,6 +170,9 @@ select {
 .red-text {
   color: var(--red-text);
   text-decoration: underline;
+}
+.red-normaltext {
+  color: var(--red-text);
 }
 .red-warning{
   color: var(--red-text);
@@ -294,4 +297,32 @@ select {
     border-bottom: 3px dashed black;
     padding-bottom: 20px;
   }
- }
+}
+
+
+
+
+
+/* GUIDLINE PAGE */
+.box-writing {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  margin-top: 50px;
+}
+
+.box-writing-number {
+  border: 2px dashed black;
+  border-right: none;
+  border-top-left-radius: 5cm ;
+  background-color: #a2e5c4;
+  color: #1a1c20;
+  text-align: center;
+  
+}
+
+.box-writing-text {
+  border: 2px dashed;
+  background-color: #d1eedfe1;
+  color: #1a1c20;
+  padding: 20px;
+}
