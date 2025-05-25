@@ -262,7 +262,7 @@ select {
   .hero-section .headshot {
     order: -1;
     padding-top: 30px;
-    margin-bottom: -50px;
+    margin-bottom: -30px;
   }
   .hero-section .headshot img {
     margin-left: 0;
