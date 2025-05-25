@@ -42,17 +42,19 @@ nav {
   padding: 0 10px;
   height: 80px;
 }
-nav .nav-left{
-  color: var(--text-color);
-  background-image: url('HFU.png');
+nav .nav-left {
   width: 30%;
   height: 100%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 25px;
-  font-weight: 400;
-  margin-top: 20px;
+  min-height: 60px;
+  display: block;
+  padding-left: 40px;
+  padding-top: 20px;
+  background-image: url('HFU.png');
+}
+
+.nav-left img.nav-logo {
+  height: 60px;
+  object-fit: contain;
 }
 
 nav .nav-right a {
@@ -213,10 +215,6 @@ select {
   .nav-left {
   display: block; /* ✅ ensure it's block-level */
   min-height: 60px; /* ✅ guarantees the height exists */
-  background-image: url('HFU.png');
-  background-size: contain;
-  background-position: left center;
-  background-repeat: no-repeat;
   flex-shrink: 0;
   }
 
